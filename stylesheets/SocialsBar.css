@@ -47,9 +47,38 @@
     color: white;
 }
 
-.calendar{
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #DA54FD;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Arial'; 
+    font-weight: bold;
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+    font-size: 15px;
     position: fixed;
-    top: 77%;
+    top: 65%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: white;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    overflow: hidden;
+    padding: 0 18px;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    position: fixed;
+    top: 83%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
