@@ -3,7 +3,6 @@
    width: 800px;
 }
 
-h5{
-    color: black;
-    font-size: 40px;
+.carousel-inner img {
+  margin: auto;
 }
