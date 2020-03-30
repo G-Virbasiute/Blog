@@ -14,53 +14,10 @@
     </head>
     
     <body>
-        <!--nav bar-->
-    <center><img style="margin-top: 10px; margin-bottom: 5px;" src="logo.png"></center>
+        <?php
+        include 'navbar.html';
+    ?>
 
-    <div style="border-top: 2px solid black; border-bottom: 2px solid black; ">    
-        <nav class="navbar navbar-expand-lg navbar-light" style=" font-family: 'Amatic SC', cursive; font-size: 30px; left: 32%;">
-
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tutorials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
-                    </li>
-
-                    <!-- ---------------These could be pulled out of a database table------------------->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Categories
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#" style="font-size: 30px;">Crochet</a>
-                            <a class="dropdown-item" href="#" style="font-size: 30px;">Knitting</a>
-                            <a class="dropdown-item" href="#" style="font-size: 30px;">Embroidery</a>
-                            <a class="dropdown-item" href="#" style="font-size: 30px;">Painting</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Members Portal
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#" style="font-size: 30px;">Sign up</a>
-                            <a class="dropdown-item" href="#" style="font-size: 30px;">Log in</a>
-                            <a class="dropdown-item" href="#" style="font-size: 30px;">Your dashboard</a> <!-- Only accessible after someone has logged in-->
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-<!--end of navbar-->
-
-<!-- welcome and heading info-->
 <div>
 <h2>Welcome!</h2>
 <p>Here's the place to manage your info, see your favourite posts and catch up on upcoming events...</p>
@@ -77,7 +34,7 @@
   </div>
   <div class="column" style="background-color:#ccc;">
     <h2>Upcoming Events</h2>
-    <p><centre><iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FLondon&amp;src=ZW4udWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%230B8043&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=1&amp;showTz=0" style="border:solid 1px #777" width="400" height="300" frameborder="0" scrolling="no"></centre></iframe></p>
+    <p><centre><iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FLondon&amp;src=Y2c3dWt2c2t2MTY0cjJiNm9xZmtnbG9wdG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%238E24AA&amp;showTz=0" style="border:solid 1px #777" width="400" height="300" frameborder="0" scrolling="no"></iframe></p>
   </div>
 </div>
 
