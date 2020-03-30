@@ -19,8 +19,8 @@
     ?>
 
 <div>
-<h2>Welcome!</h2>
-<p>Here's the place to manage your info, see your favourite posts and catch up on upcoming events...</p>
+<h2>Welcome!<!--logged in name to show here--></h2>
+<p>Here's the place for you to manage your info, see your favourite posts and catch up on upcoming events</p>
 </div>
 
 <div class="row">
