@@ -22,12 +22,44 @@
 
 <div class="row">
   <div class="column" style="background-color:#aaa;">
-    <h2>Your Details</h2>
-    <p>TO BE CREATED</p>
+    <h2>Details</h2>
+    <table>
+  <tr>
+      <td>
+          <p><b>Your Details</b></p>
+          <p>This will pull info about the member from the database</p>
+      </td>
+  </tr>
+  <tr>
+    <td>
+        <p><b>Manage Users Details and Accounts</b></p>
+        <p>This will have an option to remove users - maybe a drop-down of all users and a delete button?</p>
+    </td>
+  </tr>
+</table>
   </div>
   <div class="column" style="background-color:#bbb;">
-    <h2>Saved Posts</h2>
-    <p>TO BE CREATED</p>
+    <h2>Posts</h2>
+    <table>
+  <tr>
+      <td>
+          <p><b>Favourite Posts</b></p>
+          <p>This will show random posts on a carousel to click on and read</p>
+      </td>
+  </tr>
+  <tr>
+    <td>
+        <p><b>Manage Posts</b></p>
+        <p>Ability to remove others posts here</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <p><b>Create a Post</b></p>
+        <p>This will have a button to a form to create a new blog-post</p>
+    </td>
+  </tr>
+</table>
   </div>
   <div class="column" style="background-color:#ccc;">
     <h2>Upcoming Events</h2>
