@@ -25,15 +25,15 @@
 
 <div class="row">
   <div class="column" style="background-color:#aaa;">
-    <h2>Your Details</h2>
+      <h2><font color='purple'>Your Details</font></h2>
     <p>TO BE CREATED</p>
   </div>
   <div class="column" style="background-color:#bbb;">
-    <h2>Saved Posts</h2>
+      <h2><font color='purple'>Saved Posts</font></h2>
     <p>TO BE CREATED</p>
   </div>
   <div class="column" style="background-color:#ccc;">
-    <h2>Upcoming Events</h2>
+      <h2><font color='purple'>Upcoming Events</font></h2>
     <p><centre><iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FLondon&amp;src=Y2c3dWt2c2t2MTY0cjJiNm9xZmtnbG9wdG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%238E24AA&amp;showTz=0" style="border:solid 1px #777" width="400" height="300" frameborder="0" scrolling="no"></iframe></p>
   </div>
 </div>
