@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
     <head>
         <title>Life's a Stitch!</title>
@@ -13,25 +13,26 @@
     </head>
     <body>
         <?php
-        include 'navbar.html';
+        include 'navbar.php';
 
         //For later when we have the database connection to pull from there. 
-        /*$stmt = $db->prepare('SELECT postID, Username, MainImage, Title, DifficultyRating, Content, Published FROM BLOG_POSTS INNER JOIN USER_TABLE on USER_TABLE.UserID = BLOG_POSTS.UserID WHERE postID = :postID');
-        $stmt->execute(array(':postID' => $_GET['id']));
+        /*$stmt = $pdo->prepare('SELECT postID, Username, MainImage, Title, DifficultyRating, Content, Published FROM BLOG_POSTS INNER JOIN USER_TABLE on USER_TABLE.UserID = BLOG_POSTS.UserID WHERE postID = :postID');
+        $stmt->execute(array(':postID' => '1'));
         $row = $stmt->fetch();
 
         echo '<div>';
-        echo '<h1>' . $row['postTitle'] . '</h1>';
+        echo '<h1>' . $row['Title'] . '</h1>';
         echo '<p>Written by ' . $row['Username'] . '</p>';
         echo '<img src="' . $row['MainImage'].'">';
         echo '<p>Difficulty rating: ' . $row['DifficultyRating'] . '</p>';
         echo '<p>' . $row['Content'] . '</p>';
-        echo '<p>Posted on '.date('jS M Y H:i:s', strtotime($row['Published'])).'</p>';
-        echo '</div>';*/
+        echo '<p>Posted on ' . $row['Published'].'</p>';
+        echo '</div>';
+        */
         ?>
-   
+        
 
-        <div class="row">
+       <div class="row">
             <div class="leftcolumn">
                 <div class="card">
                     <center><h2>How-To: Satin Stitch for Hand Embroidery</h2>
