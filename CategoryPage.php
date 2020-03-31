@@ -1,8 +1,9 @@
 <?php
     include_once 'connection.php';
-    $posts = $pdo->prepare('SELECT * FROM BLOG_POSTS INNER JOIN USER_TABLE ON USER_TABLE.UserID = BLOG_POSTS.UserID WHERE PostID = ?');
+    $posts = $pdo->prepare('SELECT * FROM BLOG_POSTS WHERE PostID = ?');
     $posts->execute([$_GET['PostID']]);  
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,39 +23,40 @@
         <div class="row">
             <div class="leftcolumn">
                 <div class="card">
-                    <?php
-                    foreach ($posts as $post):
-
-                        echo '<div>';
-                        echo '<h1>' . $post['Title'] . '</h1>';
-                        echo '<p>Written by ' . $post['Username'] . '</p>';
-                        echo '<img src="' . $post['MainImage'] . '">';
-                        echo '<p>Difficulty rating: ' . $post['DifficultyRating'] . '</p>';
-                        echo '<p>' . $post['Content'] . '</p>';
-                        echo '<p>Posted on ' . $post['Published'] . '</p>';
-                        echo '</div>';
-                    ?>
+                    <table>
+                        <?php foreach ($posts as $post): ?>
+                            <tr>
+                                <?php
+                                echo '<div>';
+                                echo '<h1><a href="BlogPost.php?PostID=' . $post['PostID'] . '">' . $post['Title'] . '</a></h1>';
+                                echo '<p>Posted on ' . ($post['Published']) . '</p>';
+                                echo '<p>' . $post['Blurb'] . '</p>';
+                                echo '<p><a href="BlogPost.php?PostID=' . $post['PostID'] . '">Read More</a></p>';
+                                echo '</div>';
+                                ?>
+                            </tr>
+                        <?php endforeach; ?>
+                    </table>
                 </div>
             </div>
             <div class="rightcolumn">
                 <div class="card">
-                    <h2>About the author</h2>
-                    <div class="fakeimg" style="height:100px;">Author's profile picture</div>
-                    <?php echo '<p>' . $post['FirstName'] ." ". $post['LastName'] . '</p>';?>
+                    <h2>Events Calendar</h2>
+                    <div class="fakeimg" style="height:100px;">Put in the calendar here</div>
+                    
                 </div>
                 <div class="card">
-                    <h3>Other posts by the author:</h3>
+                    <h3>Card for something else:</h3>
                     <div class="fakeimg">Image link to a post</div><br>
                     <div class="fakeimg">Image link to a post</div><br>
                     <div class="fakeimg">Image link to a post</div>
                 </div>
                 <div class="card">
-                    <h3>Follow Me</h3>
-                    <p>Link to the author's social media page</p>
+                    <h3>Follow Us</h3>
+                    <p>Link to our social media</p>
                 </div>
             </div>
         </div>
-        <?php endforeach; ?>
 
         <div class="footer">
             <h2>Footer</h2>
@@ -62,5 +64,7 @@
         </div>
 </body>
 </html>
+
+
 
 

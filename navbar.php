@@ -1,5 +1,5 @@
 <?php
-include 'connection.php';
+include_once 'connection.php';
 
 /***PRE POPULATE CATEGOREIS***/
 $categories = $pdo->prepare('SELECT * FROM POST_CATEGORY');
@@ -33,14 +33,14 @@ $categories->execute();
                     
 <!-----------------Populate from the database, add id's, and onclick it will take you to a category's page with all tutorials for that category------------------->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Categories
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <table>
                                 <?php foreach ($categories as $category): ?>
                                     <tr>
-                                        <td><a class="dropdown-item" href="#" style="font-size: 30px;"><?= $category['Category'] ?></a></td>
+                                        <td><a class="dropdown-item" href="CategoryPage.php?PostID=<?= $category['CategoryID'] ?>" style="font-size: 30px;"><?= $category['Category'] ?></a></td>
                                     </tr>
                                 <?php endforeach; ?>
                                 </table>
