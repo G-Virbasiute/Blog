@@ -51,8 +51,8 @@ $categories->execute();
                             Members Portal
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="register.php" style="font-size: 30px;">Sign up</a>
-                            <a class="dropdown-item" href="login.php" style="font-size: 30px;">Log in</a>
+                            <a class="dropdown-item" href="#" style="font-size: 30px;">Sign up</a>
+                            <a class="dropdown-item" href="#" style="font-size: 30px;">Log in</a>
                             <a class="dropdown-item" href="#" style="font-size: 30px;">Your dashboard</a> <!-- Only accessible after someone has logged in-->
                         </div>
                     </li>
