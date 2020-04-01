@@ -14,7 +14,6 @@
     <body>
     <?php
         include 'navbar.html';
-        include 'DatabseConnection.php';  
     ?>
  <div>
 <h2>Welcome!<!--logged in name to show here--></h2>
