@@ -1,8 +1,5 @@
 <?php
 
-//BASIC USER CLASS complete 1/4/20 by Bess
-
-
 //Regex to validate login username and email:
 define('USERNAME_REGEX', '%[^a-z0-9\-\[\]\.\_=!\$\%\^&*(){}?@#$+\'"\/]+%is');
 define('EMAIL_REGEX', '%[a-z0-9._-]+@[a-z0-9_-]+\.[a-z.]+%i');
@@ -18,10 +15,14 @@ class User {
     public $profilephoto;
     
     private $password;
-    public $role = 'Admin';
+    
+    protected $userID;          //not yet linked anywhere below
+    protected $usertype;        //not yet linked anywhere below
+    
+    public $role = 'Admin';     //not yet linked anywhere below
     
 
-    public function __construct($username, $firstname, $lastname, $emailaddress, $pprofilephoto, $password) {
+    public function __construct($username, $firstname, $lastname, $emailaddress, $profilephoto, $password) {
       
       $this->username = $username;
       $this->firstname = $firstname;  
