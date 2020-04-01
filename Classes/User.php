@@ -1,5 +1,8 @@
 <?php
 
+//Do we need an include statement here to connect another class?
+
+
 //Regex to validate login username and email:
 define('USERNAME_REGEX', '%[^a-z0-9\-\[\]\.\_=!\$\%\^&*(){}?@#$+\'"\/]+%is');
 define('EMAIL_REGEX', '%[a-z0-9._-]+@[a-z0-9_-]+\.[a-z.]+%i');

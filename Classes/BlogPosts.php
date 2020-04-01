@@ -1,5 +1,8 @@
 <?php
 
+//Do we need an include statement here to connect another class?
+
+
 class BlogPosts {
     
     public $title;
@@ -15,6 +18,10 @@ class BlogPosts {
     
     protected $postID;
     protected $userID;
+    
+
+    
+    
     
     
     
