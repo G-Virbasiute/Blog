@@ -14,7 +14,7 @@ $categories->execute();
   overflow-y: auto;
 }
 </style>
-    <center><img style="margin-top: 10px; margin-bottom: 5px;" src="Images/logo2.png"></center>
+    <center><img style="margin-top: 10px; margin-bottom: 5px;" src="images/logo2.png"></center>
 
         <div style="border-top: 2px solid black; border-bottom: 2px solid black; ">    
     <nav class="navbar navbar-expand-lg navbar-light" style=" font-family: 'Amatic SC', cursive; font-size: 30px; left: 32%;">
@@ -22,7 +22,7 @@ $categories->execute();
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="Home.php">Home</a>
+                        <a class="nav-link" href="home.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Tutorials</a>
@@ -40,7 +40,7 @@ $categories->execute();
                                 <table>
                                 <?php foreach ($categories as $category): ?>
                                     <tr>
-                                        <td><a class="dropdown-item" href="CategoryPage.php?PostID=<?= $category['CategoryID'] ?>" style="font-size: 30px;"><?= $category['Category'] ?></a></td>
+                                        <td><a class="dropdown-item" href="categorypage.php?PostID=<?= $category['CategoryID'] ?>" style="font-size: 30px;"><?= $category['Category'] ?></a></td>
                                     </tr>
                                 <?php endforeach; ?>
                                 </table>

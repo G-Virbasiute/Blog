@@ -1,65 +1,40 @@
+<?php
+    session_start();  
+?>
 <html>
     <head>
-        <title>BlogTitle</title>
+        <title>Your Dashboard</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+        <link href="stylesheets/dashboard.css" rel="stylesheet" type="text/css"/>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
-        <link href="CarouselCSS.css" rel="stylesheet" type="text/css"/>
-        <link href="stylesheets/dashboard.css" rel="stylesheet" type="text/css"/>
+        <link href="carouselcss.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
+    
     <body>
-    <?php
+        <?php
         include 'navbar.html';
+  
     ?>
- <div>
-<h2>Welcome!<!--logged in name to show here--></h2>
-<p>Here's the place for you to manage your info, as well as other posts and user's</p>
+
+<div>
+<h2>Welcome <?php echo $_SESSION['username']?>!</h2>
+<p>Here's the place for you to manage your info, see your favourite posts and catch up on upcoming events</p>
 </div>
 
 <div class="row">
   <div class="column" style="background-color:#aaa;">
-      <h2><font color='purple'>Details</font></h2>
-    <table>
-  <tr>
-      <td>
-          <p><b>Your Details</b></p>
-          <p>This will pull info about the member from the database</p>
-      </td>
-  </tr>
-  <tr>
-    <td>
-        <p><b>Manage Users Details and Accounts</b></p>
-        <p>This will have an option to remove users - maybe a drop-down of all users and a delete button?</p>
-    </td>
-  </tr>
-</table>
+      <h2><font color='purple'>Your Details</font></h2>
+    <p>TO BE CREATED</p>
   </div>
   <div class="column" style="background-color:#bbb;">
-      <h2><font color='purple'>Posts</font></h2>
-    <table>
-  <tr>
-      <td>
-          <p><b>Favourite Posts</b></p>
-          <p>This will show random posts on a carousel to click on and read</p>
-      </td>
-  </tr>
-  <tr>
-    <td>
-        <p><b>Manage Posts</b></p>
-        <p>Ability to remove others posts here</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <p><b>Create a Post</b></p>
-        <p>This will have a button to a form to create a new blog-post</p>
-    </td>
-  </tr>
-</table>
+      <h2><font color='purple'>Saved Posts</font></h2>
+    <p>TO BE CREATED</p>
   </div>
   <div class="column" style="background-color:#ccc;">
       <h2><font color='purple'>Upcoming Events</font></h2>
@@ -67,7 +42,3 @@
   </div>
 </div>
 
-       
-        
-    </body>
-</html>
